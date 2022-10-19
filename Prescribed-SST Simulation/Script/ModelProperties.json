@@ -1,0 +1,90 @@
+{
+    "Model": {
+        "AMIP": {
+            "ModelName": "AMIP",
+            "ModelType": "Model",
+            "SimulationType": "CESM",
+            "ModelPath": "AMIP/",
+            "ModelRun": ["CTR", "DEF"],
+            "Ensemble": {
+                "Default_En": [5, 6, 7, 8, 9, 11, 12, 13], 
+                "Default_En_Format": {
+                    "ZeroFill": 2
+                }
+            },
+            "Properties": {
+                "Data_Frequency": "Monthly",
+                "Data_TimeRange": [1970, 2004]
+            },
+            "ReferenceFile_Path": {
+                "CTR": "AMIP/Data_rawdata/F_AMIP_CAM5_1949_CTR_rmDYN_05/atm/hist/F_AMIP_CAM5_1949_CTR_rmDYN_05.cam.h0.1970-07.nc4",
+                "DEF": "AMIP/Data_rawdata/F_AMIP_CAM5_1949_DEF_rmDYN_05/atm/hist/F_AMIP_CAM5_1949_DEF_rmDYN_05.cam.h0.1970-07.nc4"
+            }
+        },
+        "CESM1_Large_Ensemble": {
+            "ModelName": "CESM1_Large_Ensemble",
+            "DataType": "Model",
+            "SimulationType": "CESM",
+            "ModelPath": "CESM1_Large_Ensemble/",
+            "ModelRun": ["CTR"],
+            "Ensemble": {
+                "Default_En": [2, 3, 4, 5], 
+                "Default_En_Format": {
+                    "ZeroFill": 3
+                }
+            },
+            "Properties": {
+                "Data_Frequency": "Monthly",
+                "Data_TimeRange": [2006, 2100]
+            }, 
+            "ReferenceFile_Path": {
+                "CTR": "CESM1_Large_Ensemble/Data_Rawdata/T/CESM1_Large_Ensemble_002_T_CTR_2006-2080.nc"
+            }
+        },
+        "CESM1_ClimSST": {
+            "ModelName": "CESM1_ClimSST",
+            "DataType": "Model",
+            "SimulationType": "CESM",
+            "ModelPath": "CESM1_ClimSST/",
+            "ModelRun": ["CTR", "DEF"],
+            "Ensemble": {
+                "Default_En": [0], 
+                "Default_En_Format": {
+                    "ZeroFill": 1
+                }
+            },
+            "Properties": {
+                "Data_Frequency": "Monthly",
+                "Data_TimeRange": [6, 39]
+            }, 
+            "ReferenceFile_Path": {
+                "CTR": "CESM1_ClimSST/Data_Rawdata/F_2000_CAM5_f09_f09_CTR/atm/hist/F_2000_CAM5_f09_f09_CTR.cam2.h0.0006-01.nc"
+            }
+        },
+        "B1850_kosaka_Pacemaker": {
+            "ModelName": "B1850_kosaka_Pacemaker",
+            "DataType": "Model",
+            "SimulationType": "CESM",
+            "ModelPath": "B1850_kosaka_Pacemaker/",
+            "ModelRun": ["CTR", "DEF"],
+            "Ensemble": {
+                "Default_En": ["01b", "02b", "03b", "04b"], 
+                "Default_En_Format": {
+                    "ZeroFill": 2
+                }
+            },
+            "Properties": {
+                "Data_Frequency": "Monthly",
+                "Data_TimeRange": [1950, 2019],
+                "YearShift": 1739
+            }, 
+            "ReferenceFile_Path": {
+                "CTR": "/work/L.xhm/CESM/Data/B1850_kosaka_ctl_01b/atm/hist/B1850_kosaka_ctl_01b.cam.h0.0221-01.nc",
+                "DEF": "/work/L.xhm/CESM/Data/B1850_kosaka_def_01b/atm/hist/B1850_kosaka_def_01b.cam.h0.0221-01.nc"
+            }
+        }
+    },
+    "DataPreprocessing": {
+        "VerticalInterpolation": [1000, 975, 950, 925, 900, 875, 850, 825, 800, 775, 750, 725, 700, 650, 600, 550, 500, 400, 300, 200, 100]
+    }
+}
