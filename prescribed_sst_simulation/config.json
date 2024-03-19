@@ -1,0 +1,12 @@
+{
+    "Ref_File": {
+        "atm": "/work4/data/DEFExp_CESM_F_AMIP_1949/F_AMIP_CAM5_1949_CTR_rmDYN_05/atm/hist/F_AMIP_CAM5_1949_CTR_rmDYN_05.cam.h0.1970-07.nc4"
+    },
+    "Data_Name": {
+        "CTL": "F_AMIP_CAM5_1949_CTR_rmDYN",
+        "DEF": "F_AMIP_CAM5_1949_DEF_rmDYN"
+    },
+    "Data_Path": "/work4/data/DEFExp_CESM_F_AMIP_1949/",
+    "Data_En": [5, 6, 7, 8, 9, 11, 12, 13],
+    "Data_TimeRange":[1970, 2005]
+}

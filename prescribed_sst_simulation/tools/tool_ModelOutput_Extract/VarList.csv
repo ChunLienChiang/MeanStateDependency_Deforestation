@@ -1,0 +1,17 @@
+Var, Component, Range
+U, atm, MC_Extended_Analysis
+V, atm, MC_Extended_Analysis
+OMEGA, atm, MC_Extended_Analysis
+Q, atm, MC_Extended_Analysis
+TS, atm, MC_Extended_Analysis
+LHFLX, atm, MC_Extended_Analysis
+SHFLX, atm, MC_Extended_Analysis
+PRECT, atm, MC_Extended_Analysis
+FLUT, atm, MC_Extended_Analysis
+FLDS, atm, MC_Extended_Analysis
+FLNS, atm, MC_Extended_Analysis
+FLNT, atm, MC_Extended_Analysis
+FSNT, atm, MC_Extended_Analysis
+FSDS, atm, MC_Extended_Analysis
+FSNS, atm, MC_Extended_Analysis
+SOLIN, atm, MC_Extended_Analysis
